@@ -15,7 +15,7 @@
       </ul>
 
       <!-- Right Side Of Navbar -->
-      <ul class="navbar-nav navbar-right">
+     <ul class="navbar-nav navbar-right">
         <!-- 登录注册链接开始 -->
         @guest
         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
