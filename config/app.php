@@ -74,13 +74,11 @@ return [
     | Application Locale Configuration
     |--------------------------------------------------------------------------
     |
-    | The application locale determines the default locale that will be used
-    | by the translation service provider. You are free to set this value
-    | to any of the locales which will be supported by the application.
+    | 应用程序语言环境确定翻译服务提供者将使用的默认语言环境。您可以自由设置该值到应用程序将支持的任何地区。
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh_CN',
 
     /*
     |--------------------------------------------------------------------------
@@ -100,9 +98,7 @@ return [
     | Faker Locale
     |--------------------------------------------------------------------------
     |
-    | This locale will be used by the Faker PHP library when generating fake
-    | data for your database seeds. For example, this will be used to get
-    | localized telephone numbers, street address information and more.
+    | 当为数据库种子生成假数据时，Faker PHP库将使用该语言环境。例如，这将用于获取本地化的电话号码、街道地址信息等
     |
     */
 
@@ -158,7 +154,7 @@ return [
         Illuminate\Redis\RedisServiceProvider::class,
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
-        Illuminate\Translation\TranslationServiceProvider::class,
+        Overtrue\LaravelLang\TranslationServiceProvider::class,//中文语言包
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
