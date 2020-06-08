@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 
 class OrdersController extends Controller
 {
+    public function show(Order $order , Request $request)
+    {
+        $this->authorize('own', $order);
+        return view('orders.show', ['order' => $order->load(['items.productSku', 'items.product'])]);
+    }
 
     public function index(Request $request)
     {
