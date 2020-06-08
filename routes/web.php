@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::redirect('/', '/products')->name('root');
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
